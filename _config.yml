@@ -44,7 +44,7 @@ email: dmitry.bogdanov.es@gmail.com
 authors:
   dmitrybogdanov:
     name: Dmitry Bogdanov
-    bio: olution Architect | IIoT and Industrial AI expert
+    bio: Solution Architect | IIoT and Industrial AI expert
     external-image: false
     picture: assets/images/profile.jpg
     # twitter: johndoe
@@ -109,3 +109,5 @@ exclude:
     "FAQ.md",
     "vendor",
   ]
+
+repository: dsbogdanov/dsbogdanov.github.io
