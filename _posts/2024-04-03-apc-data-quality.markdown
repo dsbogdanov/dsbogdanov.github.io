@@ -20,11 +20,9 @@ Advanced process control is a wrapper around standard PID process control. The m
 1. Stabilize controlled variables (CVs) of the process.
 1. Shift setpoints of CVs closer to the most performant/effective/optimized values.
 
-<div class="side-by-side">
-    <div class="toleft">
+<div>
         <img class="image" src="{{ site.url }}/assets/images/apc_gain.png" alt="Alt Text">
         <figcaption class="caption">Classical APC explanation chart</figcaption>
-    </div>
 </div>
 
 PLCs of standard process control work in real-time directly with measurement signals and actuators. Processing of sensor data and modulation of control are executed in PLCs' hardware and low-level software modules. PLCs provide statuses of connected sensors and actuators to the application level.
