@@ -21,7 +21,7 @@ Advanced process control (APC) utilizes advanced control techniques and strategi
 2. Shifting setpoints of CVs closer to the most performant/effective/optimized values
 
 <div class="side-by-side">
-    <div class="toleft">
+    <div>
         <img class="image" src="{{ site.url }}/assets/images/01_apc_gain.png" alt="Alt Text">
         <figcaption class="caption">Classical APC explanation chart</figcaption>
     </div>
@@ -45,21 +45,21 @@ APC needs the following:
 - Minimal latency in applying setpoints in PLCs
 
 <div class="side-by-side">
-    <div class="toleft">
+    <div>
         <img class="image" src="{{ site.url }}/assets/images/01_gaps.png" alt="Alt Text">
         <figcaption class="caption">Example of a gap</figcaption>
     </div>
 </div>
 
 <div class="side-by-side">
-    <div class="toleft">
+    <div>
         <img class="image" src="{{ site.url }}/assets/images/01_not_stable.png" alt="Alt Text">
         <figcaption class="caption">Examples of unstable sequence and out of range</figcaption>
     </div>
 </div>
 
 <div class="side-by-side">
-    <div class="toleft">
+    <div>
         <img class="image" src="{{ site.url }}/assets/images/01_sticked_values.png" alt="Alt Text">
         <figcaption class="caption">Examples of sticked values</figcaption>
     </div>
