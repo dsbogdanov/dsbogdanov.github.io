@@ -4,33 +4,19 @@ layout: page
 ---
 ![Profile Image]({% if site.external-image %}{{ site.picture }}{% else %}{{ site.url }}/{{ site.picture }}{% endif %})
 
-<p>Solutions Architect and Technical Leader with 7+ years of experience in developing and delivering Industrial IoT and Industrial AI projects. Passionate about leveraging the potential of data to benefit industrial enterprises.</p>
+<p>Technical Leader with 7+ years of experience in development and delivery of software for SCADA, EMS, APC, RTO and Industrial AI solutions. Passionate about leveraging the potential of data to benefit industrial enterprises.</p>
 
 <p>Hands-on with Python, Golang, and React, implementing PoCs for industrial analytics solutions.
 Expert knowledge in industrial systems integration and connectivity, both at the field/process and enterprise levels.
 Expert knowledge in the electrical engineering domain, power generation, grid operations and energy management.</p>
 
-<h2>Skills</h2>
+<p>
+Led the team of 20+ developers and engineers for successful delivery of Industrial IoT solutions (SCADA and energy management systems) to 10 industrial enterprises, including developing and managing projects resource plan, assessing and controlling development of platform features, and commissioning team management.
+</p>
 
-<ul class="skill-list">
-	<li>IIoT</li>
-	<li>Software architecture</li>
-	<li>Information security</li>
-	<li>System integration</li>
-	<li>Software requirements management</li>
-	<li>Data analysis</li>
-	<li>Project delivery</li>
-	<li>Python</li>
-	<li>React</li>
-	<li>Golang</li>
-	<li>SQL</li>
-	<li>Clickhouse</li>
-	<li>Kafka</li>
-	<li>Keycloak</li>
-	<li>MLOps</li>
-	<li>Docker and Kubernetes</li>
-	<li>Agile and Scrum</li>
-</ul>
+<p>
+Delivered an Industrial AI platform for Advanced Process Control (APC) and Real Time Optimization (RTO) systems of the ore grinding and flotation processes, resulting in an increase of 1.0-1.5% in recovery and 2-3% in throughput
+</p>
 
 <!-- <h2>Projects</h2>
 
@@ -39,3 +25,4 @@ Expert knowledge in the electrical engineering domain, power generation, grid op
 	<li><a href="https://github.com/">Ipsum Dolor</a></li>
 	<li><a href="https://github.com/">Dolor Lorem</a></li>
 </ul> -->
+

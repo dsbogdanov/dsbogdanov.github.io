@@ -13,32 +13,65 @@ author: dmitrybogdanov
 description: Data quality for APC and RTO systems
 ---
 
-### Introduction
+### What is APC?
 
-Advanced process control is a wrapper around standard PID process control. The main goals of APC systems are:
+Advanced process control (APC) utilizes advanced control techniques and strategies as the next level of control after basic PID-like process control. The main goals of APC systems are:
 
-1. Stabilize controlled variables (CVs) of the process.
-1. Shift setpoints of CVs closer to the most performant/effective/optimized values.
+1. Stabilizing controlled variables (CVs) of the process
+2. Shifting setpoints of CVs closer to the most performant/effective/optimized values
 
-<div>
-        <img class="image" src="{{ site.url }}/assets/images/apc_gain.png" alt="Alt Text">
+<div class="side-by-side">
+    <div class="toleft">
+        <img class="image" src="{{ site.url }}/assets/images/01_apc_gain.png" alt="Alt Text">
         <figcaption class="caption">Classical APC explanation chart</figcaption>
+    </div>
 </div>
 
-PLCs of standard process control work in real-time directly with measurement signals and actuators. Processing of sensor data and modulation of control are executed in PLCs' hardware and low-level software modules. PLCs provide statuses of connected sensors and actuators to the application level.
+APC utilizes measurements, current setpoints, and discrete signals from PLCs or data gateways of the control system. It then performs calculations and writes manipulated variable setpoints back to the PLCs or control system gateway. Thus, it operates within a closed control loop, with the entire cycle time interval typically ranging from 1 to 10 seconds.
 
-If something goes wrong, it alarms operators and events propagate higher. Redundancy and duplication allow mitigating these problems. Some fallback actions could be executed, including shutting down controlled equipment.
+### Basic process control
+
+A basic control system interacts directly with sensors and actuators in real-time. Sensor data processing and control modulation occur on the hardware and low-level software modules of PLCs. PLCs diagnose and provide statuses of connected sensors and actuators to the application level. If an issue arises, operators are alerted through alarms. Redundancy and duplication in the control system help mitigate these problems. Additionally, some fallback actions, such as the shutdown of controlled equipment, can be executed at this level.
 
 ### APC case
 
-APC works with preprocessed data and gets statuses already calculated on low-level PLCs. But the communication link between PLCs and APC software could bring some issues in operations. If something goes wrong, APC should have some fallback tactics like disconnection from the control loop or transition to operate in an open loop (providing operators control over the actions).
+Modern APC techniques rely heavily on data and require control over data quality and the feedback loop. APC operates with preprocessed data and may utilize statuses already calculated at the low-level PLCs. However, the communication link between PLCs/gateway and APC software can introduce additional operational challenges.
 
-So for data-driven control strategies implemented in APC, it is even more crucial to diagnose data and feedback loops.
+APC needs the following:
+- Availability of all signals
+- No gaps in the sequence of values
+- Authenticity of values (typical problems: sticking on the same value, outside of the sensor range, values are not stable)
+- Minimal latency in providing measurement values
+- Minimal latency in applying setpoints in PLCs
 
-What should be under monitoring:
-1. Standard deviation of measurements.
-1. Sticking of measurement on a single value.
-1. Control that values are within sensor range or not clipped by range limits.
-1. Measurement delay.
-1. Setpoints from APC applied to PLCs.
-1. Communication link with PLCs/SCADA using heartbeats and counters circulated between software.
+<div class="side-by-side">
+    <div class="toleft">
+        <img class="image" src="{{ site.url }}/assets/images/01_gaps.png" alt="Alt Text">
+        <figcaption class="caption">Example of a gap</figcaption>
+    </div>
+</div>
+
+<div class="side-by-side">
+    <div class="toleft">
+        <img class="image" src="{{ site.url }}/assets/images/01_not_stable.png" alt="Alt Text">
+        <figcaption class="caption">Examples of unstable sequence and out of range</figcaption>
+    </div>
+</div>
+
+<div class="side-by-side">
+    <div class="toleft">
+        <img class="image" src="{{ site.url }}/assets/images/01_sticked_values.png" alt="Alt Text">
+        <figcaption class="caption">Examples of sticked values</figcaption>
+    </div>
+</div>
+
+The real-time control of values and the feedback loop typically involves:
+- Measurement of latencies
+- Monitoring the control values sequence, its range, and standard deviation using sliding windows
+- Identification of whether setpoints are not applied within the timeout period
+
+If something goes wrong, APC should:
+- Warn operators and, in some cases, continue to operate in a restricted mode or open loop, allowing operators to provide control actions.
+- Trigger alarms for operators and disconnect from the control loop.
+
+This is just a basic overview of data quality for APC. I will provide examples of concrete problems and actions in future articles.
