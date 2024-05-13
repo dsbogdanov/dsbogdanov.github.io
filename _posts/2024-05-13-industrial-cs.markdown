@@ -55,12 +55,12 @@ Implementing these requirements into software and solutions is the first step in
 ### How customer use implemented requirements
 After the customer provides requirements, the developers and delivery team implement them. And then what's next? Here are examples of cybersecurity requirements implementation:
 
-| #   | Your work | Customer activities | Purpose |
-| --- | --- | --- | --- |
-| 1   | Build an inventory of servers, workstations, operating systems, your software, and connections to PLCs/SCADA and IT services | Use it to establish monitoring of vulnerabilities and make updates | Enables the prevention of attacks using undocumented functionality, gray zones, and known issues |
-| 2   | Protect connections to WEB UI, databases and other components with SSL/TLS and restrict access to resources | Manage certificates, test it periodically, maintain accounts | Protect from man-in-the-middle attacks |
-| 3   | Setup audit logs and integrations with SIEM | Setup monitoring of user and service activities | Allows identification of hidden scanning activities and prevention of subsequent attacks |
-| 4   | Setup backup and define DRP | Customer will maintain, test and manage it | Provides clear and fast system recovery and reduces downtime |
+| Your work | Customer activities | Purpose |
+| --- | --- | --- |
+| Build an inventory of servers, workstations, operating systems, your software, and connections to PLCs/SCADA and IT services | Use it to establish monitoring of vulnerabilities and make updates | Enables the prevention of attacks using undocumented functionality, gray zones, and known issues |
+| Protect connections to WEB UI, databases and other components with SSL/TLS and restrict access to resources | Manage certificates, test it periodically, maintain accounts | Protect from man-in-the-middle attacks |
+| Setup audit logs and integrations with SIEM | Setup monitoring of user and service activities | Allows identification of hidden scanning activities and prevention of subsequent attacks |
+| Setup backup and define DRP | Customer will maintain, test and manage it | Provides clear and fast system recovery and reduces downtime |
 
 
 ### Attention to details
