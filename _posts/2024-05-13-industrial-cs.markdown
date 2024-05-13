@@ -74,7 +74,7 @@ Some vendors and system integrators highlight in their decks: "We pay major atte
 5. Use only secure connections whenever possible.
 6. Understand, implement and document concepts of account classification, permissions and access restrictions. Block default accounts. 
 7. Use authentication and authorization for each resource/component whenever possible. Setup strong password policies.
-8. Provide flexibility in configuring user idle session timeouts.
+8. Provide flexibility in configuring user session idle timeouts.
 9. Use antivirus solutions on each server and user workstation.
 10. Have audit logs, integration logs and integrate your software into SIEM.
 11. Develop a DRP for your system. Setup backup policies. 
