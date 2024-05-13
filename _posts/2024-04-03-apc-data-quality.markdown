@@ -69,4 +69,4 @@ If something goes wrong, APC should:
 -   Warn operators and, in some cases, continue to operate in a restricted mode or open loop, allowing operators to provide control actions.
 -   Trigger alarms for operators and disconnect from the control loop.
 
-This is just a basic overview of data quality for APC. I will provide examples of concrete problems and actions in future articles.
+This is a basic introduction to data quality issues for APC. Solutions to these problems should be tailored to the IT/OT environment, connectivity type, and control strategy implementation.
