@@ -1,7 +1,7 @@
 ---
 title: Industrial cybersecurity from the developers's perspective
 layout: post
-date: 2024-05-13 17:00
+date: 2024-05-13 12:00
 image: /assets/images/markdown.jpg
 headerImage: false
 tag:
