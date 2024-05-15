@@ -71,9 +71,9 @@ Some vendors and system integrators highlight in their decks: "We pay major atte
 2. Know cybersecurity issues of current versions and build strategies to mitigate them.
 3. Have a proactive release and update policy, enabling customers to stay informed about critical issues and update software to resolve them.
 4. Document connections, versions, close unused ports, use DMZ, ACL and other methods of connection restrictions. 
-5. Use only secure connections whenever possible.
+5. Use only secure connections when it's possible.
 6. Understand, implement and document concepts of account classification, permissions and access restrictions. Block default accounts. 
-7. Use authentication and authorization for each resource/component whenever possible. Setup strong password policies.
+7. Use authentication and authorization for each resource/component when it's possible. Setup strong password policies.
 8. Provide flexibility in configuring user session idle timeouts.
 9. Use antivirus solutions on each server and user workstation.
 10. Have audit logs, integration logs and integrate your software into SIEM.
