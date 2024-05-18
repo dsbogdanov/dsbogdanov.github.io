@@ -13,7 +13,7 @@ description: Wide and Deep types of projects for industrials
 
 ### Introduction
 
-I've delivered many projects for industrial enterprises. The two extreme case types of projects are what I call Wide and Deep projects.
+I've delivered many projects for industrial enterprises. The two extreme case types are what I call Wide and Deep projects.
 
 Wide projects are about building infrastructure and indirect effects, characterized by:
 - A large number of signals, devices, and visualizations
