@@ -53,6 +53,7 @@ You might encounter pitfalls like:
 - Poor sensors for predictive models
 - Lack of sensors for advanced control
 - 90% of time spent with zero effect delivered
+
 Sometimes, bypassing these issues requires many attempts and much effort.
 
 To complete deep projects, only top-rated specialists are required. Even if the team has juniors, they should possess great skills. Problem-solvers are essential. Teams built with such workers are very autonomous and need just a problem at the input and some time to solve it. Here, agile techniques and non-standard project management ideas are necessary.
