@@ -22,21 +22,19 @@ When we talk about people planning and controlling technological processes, we n
 - People's control is based on their experience ("what worked earlier is what I am doing now").
 - People love stability. If the process variables are stable, they will not take any actions to "step on the gas".
 - People naturally fail to find optimal values when the objective is non-linear and uncertainty is high.
+
 I leave it to you to think a little bit about the restrictions of human nature and continue the list.
 
 ### Ways to build a solution
 When you want to build a data-driven solution or product for industrials, you could start with:
 
-1. Gaining expertise in the domain
-    For example, you will fail to decrease power losses in a grid by 1-3% if you don't understand how it works, even if you know how to measure losses or have a PhD degree in statistics. Additionally, nobody will talk to you on site if you don't speak their professional slang.
-2. Building a bridge between technological indicators and money
-    Find out how are revenue and costs related to the technological indicators.
-3. Identifying and improving weak points of human-only solutions
-    Look for areas where human-only solutions are not performing well and improve them with data. Focus on areas where uncertainty in processes is high. Beating human-only solutions on efficiency is not about being better all the time. Your solution could be better on average over a given time window.
+1. Gaining expertise in the domain. For example, you will fail to decrease power losses in a grid by 1-3% if you don't understand how it works, even if you know how to measure losses or have a PhD degree in statistics. Additionally, nobody will talk to you on site if you don't speak their professional slang.
+2. Building a bridge between technological indicators and money. Find out how are revenue and costs related to the technological indicators.
+3. Identifying and improving weak points of human-only solutions. Look for areas where human-only solutions are not performing well and improve them with data. Focus on areas where uncertainty in processes is high. Beating human-only solutions on efficiency is not about being better all the time. Your solution could be better on average over a given time window.
 
 **Advanced Process Control (APC)** commonly uses data to build models predicting process controlled variables (CVs) and utilizes these predictions to stabilize CVs. This approach allows for operating "on the edge," where operators may not be comfortable with disturbances, but the quality, output, or other indicators are higher.
 
-**Real-Time Optimization (RTO)** systems extensively use data models of processes and equipment (both hybrid and surrogate models) for predicting environmental indicators. These models are then incorporated into an optimization objective. The better an RTO predicts system behavior over a time interval, the more optimal production becomes in terms of output, quality, and efficiency.
+**Real-Time Optimization (RTO)** systems extensively use data models of processes and equipment (both hybrid and surrogate models) and for predicting external indicators. These models are then incorporated into an optimization objective. The better an RTO predicts system behavior, the more optimal production becomes in terms of output, quality, and efficiency.
 
 **Predictive Maintenance** commonly uses two types of models: one that predicts the remaining useful life and another that identifies anomalies in behavior that could lead to equipment failures.
 ### How to check if data driven solution actually works
