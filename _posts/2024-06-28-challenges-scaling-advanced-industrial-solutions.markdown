@@ -1,11 +1,12 @@
 ---
 title: Challenges In Scaling Advanced Industrial Solutions
 layout: post
-date: 2024-06-28 12:00
+date: 2024-06-28 00:00
 image: /assets/images/markdown.jpg
 headerImage: false
 tag:
     - iiot
+    - processes
 category: blog
 author: dmitrybogdanov
 description: Challenges In Scaling Advanced Industrial Solutions
